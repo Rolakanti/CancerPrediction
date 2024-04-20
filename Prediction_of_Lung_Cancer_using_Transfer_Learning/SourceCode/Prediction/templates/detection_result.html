@@ -1,0 +1,23 @@
+{%include "uheader.html" %}
+<div class="breadcrumb-agile py-1">
+		<ol class="breadcrumb m-0">
+			<li class="breadcrumb-item">
+				<a href="">Lung Cancer Prediction </a>
+			</li>
+			<li class="breadcrumb-item active" aria-current="page"></li>
+		</ol>
+	</div>
+	<section class="logins py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="title-section mb-md-5 mb-4">
+				<h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Prediction Result: <font color="blue">{{result}}</font></h3>
+			</div>
+			<div class="login px-sm-4 mx-auto mw-100 login-wrapper">
+				   <img src="{{ url_for('static',filename='lr_detection.jpg')}}" width="500" height="500" alt="">
+
+			</div>
+		</div>
+	</section>
+	<!-- //login -->
+
+{%include "footer.html" %}
